@@ -20,3 +20,36 @@ SIDHI:
     !byte $22, $24, $26, $29, $2B, $2E, $30, $33, $36, $3A, $3D, $41  ; octave 5
     !byte $45, $49, $4D, $52, $57, $5C, $61, $67, $6D, $74, $7B, $82  ; octave 6
     !byte $8A, $92, $9B, $A4, $AE, $B8, $C3, $CF, $DB, $E8, $F6, $00  ; octave 7 (H-7 missing)
+
+; semitone numbers
+NOTE_C  = 0
+NOTE_CS = 1   ; C#  (Db)
+NOTE_D  = 2
+NOTE_DS = 3   ; D#  (Eb)
+NOTE_E  = 4
+NOTE_F  = 5
+NOTE_FS = 6   ; F#  (Gb)
+NOTE_G  = 7
+NOTE_GS = 8   ; G#  (Ab)
+NOTE_A  = 9
+NOTE_AS = 10  ; A#  (Bb)
+NOTE_B  = 11
+
+; flats (aliases)
+NOTE_DB = NOTE_CS
+NOTE_EB = NOTE_DS
+NOTE_GB = NOTE_FS
+NOTE_AB = NOTE_GS
+NOTE_BB = NOTE_AS
+
+; idx = (octave+1)*12 + semitone
+!macro NOTEIDX semitone, octave {
+    !byte ((octave + 1) * 12 + semitone)
+}
+
+; melody example (C major arpeggio)
+ARP_C_MAJOR:
+    NOTEIDX NOTE_C, 4     ; C-4  -> index 48
+    NOTEIDX NOTE_E, 4     ; E-4  -> index 52
+    NOTEIDX NOTE_G, 4     ; G-4  -> index 55
+    NOTEIDX NOTE_C, 5     ; C-5  -> index 60
