@@ -1,0 +1,697 @@
+
+<!-- sourced from: https://sta.c64.org/cbm64sndfreq.html -->
+<!-- reformatted for clarity, readability and modern HTML standards -->
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commodore 64 sound frequencies and SID values</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      h2 {
+        text-align: center;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        margin: 0 auto;
+      }
+      th, td {
+        border: 1px solid #000;
+        padding: 4px;
+        text-align: center;
+      }
+      th {
+        background-color: #f0f0f0;
+        font-weight: bold;
+      }
+      .note-header {
+        width: 10%;
+      }
+      .freq-header {
+        width: 20%;
+      }
+      .octave-header {
+        font-weight: bold;
+        background-color: #e0e0e0;
+      }
+      .note-cell {
+        width: 10%;
+        vertical-align: top;
+      }
+      .freq-cell {
+        width: 10%;
+        vertical-align: top;
+      }
+      .notes {
+        text-align: justify;
+        margin-top: 20px;
+      }
+      .notes li {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Commodore 64 sound frequencies and SID values</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th class="note-header">Note</th>
+          <th class="freq-header" colspan="2">440 Hz<br>(Freq, SID value)</th>
+          <th class="freq-header" colspan="2">435 Hz<br>(Freq, SID value)</th>
+          <th class="note-header">Note</th>
+          <th class="freq-header" colspan="2">440 Hz<br>(Freq, SID value)</th>
+          <th class="freq-header" colspan="2">435 Hz<br>(Freq, SID value)</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr class="octave-header">
+          <td colspan="5">Octave 0</td>
+          <td colspan="5">Octave 4</td>
+        </tr>
+
+        <tr>
+          <td class="note-cell">C-0</td>
+          <td class="freq-cell">16.4</td>
+          <td class="freq-cell">$0115</td>
+          <td class="freq-cell">16.2</td>
+          <td class="freq-cell">$0112</td>
+          <td>C-4</td>
+          <td>261.6</td>
+          <td>$1150</td>
+          <td>258.7</td>
+          <td>$111E</td>
+        </tr>
+<tr>
+          <td>C#0</td>
+          <td>17.3</td>
+          <td>$0125</td>
+          <td>17.1</td>
+          <td>$0122</td>
+          <td>C#4</td>
+          <td>277.2</td>
+          <td>$1258</td>
+          <td>274.0</td>
+          <td>$1223</td>
+        </tr>
+        <tr>
+          <td>D-0</td>
+          <td>18.4</td>
+          <td>$0137</td>
+          <td>18.1</td>
+          <td>$0133</td>
+          <td>D-4</td>
+          <td>293.7</td>
+          <td>$136F</td>
+          <td>290.3</td>
+          <td>$1337</td>
+        </tr>
+        <tr>
+          <td>D#0</td>
+          <td>19.4</td>
+          <td>$0149</td>
+          <td>19.2</td>
+          <td>$0146</td>
+          <td>D#4</td>
+          <td>311.1</td>
+          <td>$1496</td>
+          <td>307.6</td>
+          <td>$145B</td>
+        </tr>
+        <tr>
+          <td>E-0</td>
+          <td>20.6</td>
+          <td>$015D</td>
+          <td>20.4</td>
+          <td>$0159</td>
+          <td>E-4</td>
+          <td>329.6</td>
+          <td>$15D0</td>
+          <td>325.9</td>
+          <td>$1591</td>
+        </tr>
+        <tr>
+          <td>F-0</td>
+          <td>21.8</td>
+          <td>$0172</td>
+          <td>21.6</td>
+          <td>$016E</td>
+          <td>F-4</td>
+          <td>349.2</td>
+          <td>$171C</td>
+          <td>345.3</td>
+          <td>$16DA</td>
+        </tr>
+        <tr>
+          <td>F#0</td>
+          <td>23.1</td>
+          <td>$0188</td>
+          <td>22.9</td>
+          <td>$0183</td>
+          <td>F#4</td>
+          <td>370.0</td>
+          <td>$187C</td>
+          <td>365.8</td>
+          <td>$1836</td>
+        </tr>
+        <tr>
+          <td>G-0</td>
+          <td>24.5</td>
+          <td>$019F</td>
+          <td>24.2</td>
+          <td>$019A</td>
+          <td>G-4</td>
+          <td>392.0</td>
+          <td>$19F0</td>
+          <td>387.5</td>
+          <td>$19A6</td>
+        </tr>
+        <tr>
+          <td>G#0</td>
+          <td>26.0</td>
+          <td>$01B8</td>
+          <td>25.7</td>
+          <td>$01B3</td>
+          <td>G#4</td>
+          <td>415.3</td>
+          <td>$1B7B</td>
+          <td>410.6</td>
+          <td>$1B2C</td>
+        </tr>
+        <tr>
+          <td>A-0</td>
+          <td>27.5</td>
+          <td>$01D2</td>
+          <td>27.2</td>
+          <td>$01CD</td>
+          <td>A-4</td>
+          <td>440.0</td>
+          <td>$1D1E</td>
+          <td>435.0</td>
+          <td>$1CCA</td>
+        </tr>
+        <tr>
+          <td>A#0</td>
+          <td>29.1</td>
+          <td>$01EE</td>
+          <td>28.8</td>
+          <td>$01E8</td>
+          <td>A#4</td>
+          <td>466.2</td>
+          <td>$1ED9</td>
+          <td>460.9</td>
+          <td>$1E80</td>
+        </tr>
+        <tr>
+        <td>H-0</td>
+        <td>30.9</td>
+        <td>$020B</td>
+        <td>30.5</td>
+        <td>$0205</td>
+        <td>H-4</td>
+        <td>493.9</td>
+        <td>$20AE</td>
+        <td>488.3</td>
+        <td>$2050</td>
+      </tr>
+
+      <tr class="octave-header">
+        <td colspan="5">Octave 1</td>
+        <td colspan="5">Octave 5</td>
+      </tr>
+
+      <tr>
+        <td>C-1</td>
+        <td>32.7</td>
+        <td>$022A</td>
+        <td>32.3</td>
+        <td>$0224</td>
+        <td>C-5</td>
+        <td>523.3</td>
+        <td>$22A0</td>
+        <td>517.3</td>
+        <td>$223C</td>
+      </tr>
+      <tr>
+        <td>C#1</td>
+        <td>34.6</td>
+        <td>$024B</td>
+        <td>34.3</td>
+        <td>$0244</td>
+        <td>C#5</td>
+        <td>554.4</td>
+        <td>$24AF</td>
+        <td>548.1</td>
+        <td>$2446</td>
+      </tr>
+      <tr>
+        <td>D-1</td>
+        <td>36.7</td>
+        <td>$026E</td>
+        <td>36.3</td>
+        <td>$0267</td>
+        <td>D-5</td>
+        <td>587.3</td>
+        <td>$26DD</td>
+        <td>580.7</td>
+        <td>$266E</td>
+      </tr>
+      <tr>
+        <td>D#1</td>
+        <td>38.9</td>
+        <td>$0293</td>
+        <td>38.4</td>
+        <td>$028B</td>
+        <td>D#5</td>
+        <td>622.3</td>
+        <td>$292D</td>
+        <td>615.2</td>
+        <td>$28B7</td>
+      </tr>
+      <tr>
+        <td>E-1</td>
+        <td>41.2</td>
+        <td>$02BA</td>
+        <td>40.7</td>
+        <td>$02B2</td>
+        <td>E-5</td>
+        <td>659.3</td>
+        <td>$2BA0</td>
+        <td>651.8</td>
+        <td>$2B22</td>
+      </tr>
+      <tr>
+        <td>F-1</td>
+        <td>43.7</td>
+        <td>$02E3</td>
+        <td>43.2</td>
+        <td>$02DB</td>
+        <td>F-5</td>
+        <td>698.5</td>
+        <td>$2E38</td>
+        <td>690.5</td>
+        <td>$2DB3</td>
+      </tr>
+      <tr>
+        <td>F#1</td>
+        <td>46.3</td>
+        <td>$030F</td>
+        <td>45.7</td>
+        <td>$0307</td>
+        <td>F#5</td>
+        <td>740.0</td>
+        <td>$30F8</td>
+        <td>731.6</td>
+        <td>$306B</td>
+      </tr>
+      <tr>
+        <td>G-1</td>
+        <td>49.0</td>
+        <td>$033E</td>
+        <td>48.4</td>
+        <td>$0335</td>
+        <td>G-5</td>
+        <td>784.0</td>
+        <td>$33E1</td>
+        <td>775.1</td>
+        <td>$334C</td>
+      </tr>
+      <tr>
+        <td>G#1</td>
+        <td>51.9</td>
+        <td>$036F</td>
+        <td>51.3</td>
+        <td>$0366</td>
+        <td>G#5</td>
+        <td>830.6</td>
+        <td>$36F6</td>
+        <td>821.2</td>
+        <td>$3659</td>
+      </tr>
+      <tr>
+        <td>A-1</td>
+        <td>55.0</td>
+        <td>$03A4</td>
+        <td>54.4</td>
+        <td>$0399</td>
+        <td>A-5</td>
+        <td>880.0</td>
+        <td>$3A3B</td>
+        <td>870.0</td>
+        <td>$3994</td>
+      </tr>
+      <tr>
+        <td>A#1</td>
+        <td>58.3</td>
+        <td>$03DB</td>
+        <td>57.6</td>
+        <td>$03D0</td>
+        <td>A#5</td>
+        <td>932.3</td>
+        <td>$3DB2</td>
+        <td>921.7</td>
+        <td>$3D00</td>
+      </tr>
+      <tr>
+        <td>H-1</td>
+        <td>61.7</td>
+        <td>$0416</td>
+        <td>61.0</td>
+        <td>$040A</td>
+        <td>H-5</td>
+        <td>987.8</td>
+        <td>$415C</td>
+        <td>976.5</td>
+        <td>$40A1</td>
+      </tr>
+
+      <tr class="octave-header">
+        <td colspan="5">Octave 2</td>
+        <td colspan="5">Octave 6</td>
+      </tr>
+
+      <tr>
+        <td>C-2</td>
+        <td>65.4</td>
+        <td>$0454</td>
+        <td>64.7</td>
+        <td>$0448</td>
+        <td>C-6</td>
+        <td>1046.5</td>
+        <td>$4540</td>
+        <td>1034.6</td>
+        <td>$4479</td>
+      </tr>
+      <tr>
+        <td>C#2</td>
+        <td>69.3</td>
+        <td>$0496</td>
+        <td>68.5</td>
+        <td>$0489</td>
+        <td>C#6</td>
+        <td>1108.8</td>
+        <td>$495E</td>
+        <td>1096.2</td>
+        <td>$488C</td>
+      </tr>
+      <tr>
+        <td>D-2</td>
+        <td>73.4</td>
+        <td>$04DC</td>
+        <td>72.6</td>
+        <td>$04CE</td>
+        <td>D-6</td>
+        <td>1174.7</td>
+        <td>$4DBB</td>
+        <td>1161.3</td>
+        <td>$4CD3</td>
+      </tr>
+      <tr>
+        <td>D#2</td>
+        <td>77.8</td>
+        <td>$0526</td>
+        <td>76.9</td>
+        <td>$0517</td>
+        <td>D#6</td>
+        <td>1244.5</td>
+        <td>$525A</td>
+        <td>1230.4</td>
+        <td>$516D</td>
+      </tr>
+      <tr>
+        <td>E-2</td>
+        <td>82.4</td>
+        <td>$0574</td>
+        <td>81.5</td>
+        <td>$0564</td>
+        <td>E-6</td>
+        <td>1318.5</td>
+        <td>$573F</td>
+        <td>1303.5</td>
+        <td>$5645</td>
+      </tr>
+      <tr>
+        <td>F-2</td>
+        <td>87.3</td>
+        <td>$05C7</td>
+        <td>86.3</td>
+        <td>$05B6</td>
+        <td>F-6</td>
+        <td>1396.9</td>
+        <td>$5C6F</td>
+        <td>1381.0</td>
+        <td>$5B66</td>
+      </tr>
+      <tr>
+        <td>F#2</td>
+        <td>92.5</td>
+        <td>$061F</td>
+        <td>91.4</td>
+        <td>$060D</td>
+        <td>F#6</td>
+        <td>1480.0</td>
+        <td>$61EF</td>
+        <td>1463.2</td>
+        <td>$40D6</td>
+      </tr>
+      <tr>
+        <td>G-2</td>
+        <td>98.0</td>
+        <td>$067C</td>
+        <td>96.9</td>
+        <td>$066A</td>
+        <td>G-6</td>
+        <td>1568.0</td>
+        <td>$67C2</td>
+        <td>1550.2</td>
+        <td>$6698</td>
+      </tr>
+      <tr>
+        <td>G#2</td>
+        <td>103.8</td>
+        <td>$06DF</td>
+        <td>102.6</td>
+        <td>$06CB</td>
+        <td>G#6</td>
+        <td>1661.2</td>
+        <td>$6DED</td>
+        <td>1642.3</td>
+        <td>$6CB1</td>
+      </tr>
+      <tr>
+        <td>A-2</td>
+        <td>110.0</td>
+        <td>$0747</td>
+        <td>108.8</td>
+        <td>$0733</td>
+        <td>A-6</td>
+        <td>1760.0</td>
+        <td>$7476</td>
+        <td>1740.0</td>
+        <td>$7328</td>
+      </tr>
+      <tr>
+        <td>A#2</td>
+        <td>116.5</td>
+        <td>$07B6</td>
+        <td>115.2</td>
+        <td>$07A0</td>
+        <td>A#6</td>
+        <td>1864.7</td>
+        <td>$7B63</td>
+        <td>1843.5</td>
+        <td>$7A01</td>
+      </tr>
+      <tr>
+        <td>H-2</td>
+        <td>123.5</td>
+        <td>$082C</td>
+        <td>122.1</td>
+        <td>$0814</td>
+        <td>H-6</td>
+        <td>1975.5</td>
+        <td>$82B9</td>
+        <td>1953.1</td>
+        <td>$8142</td>
+      </tr>
+
+      <tr class="octave-header">
+        <td colspan="5">Octave 3</td>
+        <td colspan="5">Octave 7</td>
+      </tr>
+
+      <tr>
+        <td>C-3</td>
+        <td>130.8</td>
+        <td>$08A8</td>
+        <td>129.3</td>
+        <td>$088F</td>
+        <td>C-7</td>
+        <td>2093.0</td>
+        <td>$8A7F</td>
+        <td>2069.2</td>
+        <td>$88F2</td>
+      </tr>
+      <tr>
+        <td>C#3</td>
+        <td>138.6</td>
+        <td>$092C</td>
+        <td>137.0</td>
+        <td>$0911</td>
+        <td>C#7</td>
+        <td>2217.5</td>
+        <td>$92BC</td>
+        <td>2192.3</td>
+        <td>$9117</td>
+      </tr>
+      <tr>
+        <td>D-3</td>
+        <td>146.8</td>
+        <td>$09B7</td>
+        <td>145.2</td>
+        <td>$099B</td>
+        <td>D-7</td>
+        <td>2349.3</td>
+        <td>$9B75</td>
+        <td>2322.6</td>
+        <td>$99B7</td>
+      </tr>
+      <tr>
+        <td>D#3</td>
+        <td>155.6</td>
+        <td>$0A4B</td>
+        <td>153.8</td>
+        <td>$0A2E</td>
+        <td>D#7</td>
+        <td>2489.0</td>
+        <td>$A4B4</td>
+        <td>2460.7</td>
+        <td>$A2DB</td>
+      </tr>
+      <tr>
+        <td>E-3</td>
+        <td>164.8</td>
+        <td>$0AE8</td>
+        <td>162.9</td>
+        <td>$0AC9</td>
+        <td>E-7</td>
+        <td>2637.0</td>
+        <td>$AE7F</td>
+        <td>2607.0</td>
+        <td>$AC8A</td>
+      </tr>
+      <tr>
+        <td>F-3</td>
+        <td>174.6</td>
+        <td>$0B8E</td>
+        <td>172.6</td>
+        <td>$0B6D</td>
+        <td>F-7</td>
+        <td>2793.8</td>
+        <td>$B8DF</td>
+        <td>2762.1</td>
+        <td>$B6CC</td>
+      </tr>
+      <tr>
+        <td>F#3</td>
+        <td>185.0</td>
+        <td>$0C3E</td>
+        <td>182.9</td>
+        <td>$0C1B</td>
+        <td>F#7</td>
+        <td>2960.0</td>
+        <td>$C3DE</td>
+        <td>2926.4</td>
+        <td>$C1AC</td>
+      </tr>
+      <tr>
+        <td>G-3</td>
+        <td>196.0</td>
+        <td>$0CF8</td>
+        <td>193.8</td>
+        <td>$0CD3</td>
+        <td>G-7</td>
+        <td>3136.0</td>
+        <td>$CF84</td>
+        <td>3100.4</td>
+        <td>$CD30</td>
+      </tr>
+      <tr>
+        <td>G#3</td>
+        <td>207.7</td>
+        <td>$0DBE</td>
+        <td>205.3</td>
+        <td>$0D96</td>
+        <td>G#7</td>
+        <td>3322.4</td>
+        <td>$DBD9</td>
+        <td>3284.6</td>
+        <td>$D962</td>
+      </tr>
+      <tr>
+        <td>A-3</td>
+        <td>220.0</td>
+        <td>$0E8F</td>
+        <td>217.5</td>
+        <td>$0E65</td>
+        <td>A-7</td>
+        <td>3520.0</td>
+        <td>$E8ED</td>
+        <td>3480.0</td>
+        <td>$E650</td>
+      </tr>
+      <tr>
+        <td>A#3</td>
+        <td>233.1</td>
+        <td>$0F6C</td>
+        <td>230.4</td>
+        <td>$0F40</td>
+        <td>A#7</td>
+        <td>3729.3</td>
+        <td>$F6C6</td>
+        <td>3686.9</td>
+        <td>$F402</td>
+      </tr>
+      <tr>
+        <td>H-3</td>
+        <td>246.9</td>
+        <td>$1057</td>
+        <td>244.1</td>
+        <td>$1028</td>
+        <td>H-7</td>
+        <td>3951.0</td>
+        <td>&nbsp;</td>
+        <td>3906.1</td>
+        <td>&nbsp;</td>
+      </tr>
+      </tbody>
+    </table>
+
+    <div class="notes">
+    <p>Notes:</p>
+
+    <ol>
+      <li>
+        <p>This is a tempered scale: the factor between the
+        frequency of two successive notes is the 12th root of 2.</p>
+      </li>
+
+      <li>
+        <p>The SID value for the 435 Hz A-4 sound has been
+        calibrated with a 435 Hz normal A tuning fork whose pitch has not changed
+        audibly for a decade.</p>
+      </li>
+    </ol>
+    </div>
+
+  </body>
+</html>
